@@ -11,30 +11,51 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></link>
 	<script src="x_163412_angular_a.angular_app_client_lo.jsdbx"></script>
+<style>
+	.dpblau {
+		background: blue;
+		color: red;
+	}
+</style>
 	<div ng-app="angularapp" ng-controller="AngularAppCtrl as appctrl">
 		<input type="text" ng-model="myVar" placeholder="Enter some Text here"></input>
 		<p></p>
 		<div class="jumbotron">
 			<h1 class="display-3">Hello world!</h1>
 			<hr class="m-y-2" />
-			<p>{{myVar}}</p>
+			<p style='color:{{myVar}};'>{{myVar}}</p>
+			<table>
+				<tr>
+					<td class='dp{{myVar}}'>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>{{myVar}}</td>
+					<td>{{myVar}}</td>
+					<td>{{myVar}}</td>
+					<td>{{myVar}}</td>
+				</tr>
+			</table>
 		</div>
 		<button ng-click="clearTxt()" type="btn btn-primary">Clear Text</button>
 	</div>
-</j:jelly>]]></html>
+</j:jelly>
+]]></html>
         <name>angular_app</name>
         <processing_script/>
         <sys_class_name>sys_ui_page</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-10-10 05:11:41</sys_created_on>
         <sys_id>8fffd9b1db0123006cbefbef299619c0</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>angular_app</sys_name>
         <sys_package display_value="Angular App" source="x_163412_angular_a">a7cf1d71db0123006cbefbef2996195a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Angular App">a7cf1d71db0123006cbefbef2996195a</sys_scope>
         <sys_update_name>sys_ui_page_8fffd9b1db0123006cbefbef299619c0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-10-10 06:13:42</sys_updated_on>
+        <sys_updated_on>2018-10-10 07:27:34</sys_updated_on>
     </sys_ui_page>
 </record_update>
